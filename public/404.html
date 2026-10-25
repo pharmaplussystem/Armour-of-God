@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armour of God — Christian Freedom & Purity</title>
+    <script>
+      (function() {
+        var pathname = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+
+        // 1. Fix repository URL case sensitivity on GitHub Pages (e.g. Armour-of-god -> Armour-of-God)
+        if (/\/armour-of-god(\/.*)?$/i.test(pathname)) {
+          var correctedPath = pathname.replace(/\/armour-of-god/i, '/Armour-of-God');
+          if (!correctedPath.endsWith('/') && !correctedPath.includes('.')) {
+            correctedPath += '/';
+          }
+          if (correctedPath !== pathname) {
+            window.location.replace(window.location.origin + correctedPath + search + hash);
+            return;
+          }
+        }
+
+        // 2. SPA Deep-link resolution for GitHub Pages
+        var segments = pathname.split('/').filter(Boolean);
+        if (segments.length > 0) {
+          var repo = segments[0];
+          var rest = segments.slice(1).join('/');
+          if (rest && rest !== 'index.html') {
+            window.location.replace(window.location.origin + '/' + repo + '/#/' + rest + search + hash);
+            return;
+          }
+          window.location.replace(window.location.origin + '/' + repo + '/' + search + hash);
+          return;
+        }
+
+        window.location.replace('./');
+      })();
+    </script>
+  </head>
+  <body style="background:#0b132b;color:#f1f5f9;font-family:sans-serif;text-align:center;padding:3rem 1rem;">
+    <h2 style="font-family:serif;letter-spacing:0.05em;">Armour of God</h2>
+    <p>Loading application...</p>
+    <p><a href="./" style="color:#f59e0b;font-weight:bold;text-decoration:none;">Click here if not redirected automatically</a></p>
+  </body>
+</html>

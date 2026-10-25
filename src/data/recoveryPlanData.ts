@@ -1,0 +1,468 @@
+import { PlanDay, MilestoneBadge } from '../types';
+
+export const MILESTONE_BADGES: MilestoneBadge[] = [
+  {
+    id: 'm-1d',
+    daysRequired: 1,
+    title: 'First Step of Freedom',
+    subtitle: 'Day 1 Complete — You stood firm today.',
+    verse: 'Lamentations 3:22-23 — His mercies never come to an end; they are new every morning.',
+    icon: 'Sparkles'
+  },
+  {
+    id: 'm-3d',
+    daysRequired: 3,
+    title: 'Resurrection Power',
+    subtitle: '3 Days in the Light — The tomb is empty.',
+    verse: 'Romans 6:4 — Just as Christ was raised from the dead, we too might walk in newness of life.',
+    icon: 'Sun'
+  },
+  {
+    id: 'm-7d',
+    daysRequired: 7,
+    title: 'One Week Warrior',
+    subtitle: '7 Days Victorious — Foundation established.',
+    verse: 'Proverbs 24:16 — For the righteous falls seven times and rises again.',
+    icon: 'Shield'
+  },
+  {
+    id: 'm-14d',
+    daysRequired: 14,
+    title: 'Fortress of Faith',
+    subtitle: 'Two Weeks of Diligence — Brain pathways renewing.',
+    verse: '1 Corinthians 10:13 — God is faithful, and He will provide the way of escape.',
+    icon: 'ShieldCheck'
+  },
+  {
+    id: 'm-30d',
+    daysRequired: 30,
+    title: 'Armor Master',
+    subtitle: '30 Days Clean — A full month of holy victory.',
+    verse: 'Romans 12:2 — Be transformed by the renewal of your mind.',
+    icon: 'Crown'
+  },
+  {
+    id: 'm-60d',
+    daysRequired: 60,
+    title: 'Steadfast Soldier',
+    subtitle: 'Two Months of Kingdom Purpose.',
+    verse: 'Galatians 5:16 — Walk by the Spirit, and you will not gratify the desires of the flesh.',
+    icon: 'Award'
+  },
+  {
+    id: 'm-90d',
+    daysRequired: 90,
+    title: 'Renewed Mind Champion',
+    subtitle: '90 Days Rewired — Living in holy freedom.',
+    verse: '2 Corinthians 5:17 — Old things have passed away; behold, all things have become new.',
+    icon: 'Trophy'
+  },
+  {
+    id: 'm-365d',
+    daysRequired: 365,
+    title: 'Overcomer in Christ',
+    subtitle: '1 Year of Transformed Living.',
+    verse: '1 Corinthians 15:57 — Thanks be to God, who gives us the victory through our Lord Jesus Christ.',
+    icon: 'Star'
+  }
+];
+
+export const THIRTY_DAY_PLAN: PlanDay[] = [
+  // PHASE 1: Awareness, Honesty, and Preparation (Days 1 - 7)
+  {
+    dayNumber: 1,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'The Great Confession & Laying Down the Burden',
+    scriptureRef: '1 John 1:9',
+    scriptureText: 'If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.',
+    devotional: 'Welcome to Day 1. The battle for freedom does not start with a burst of heroic willpower; it begins with total surrender. You cannot heal what you refuse to acknowledge. Today, bring the entire burden into the light before Jesus Christ.',
+    armorFocus: 'Belt of Truth',
+    habitTask: 'Write an honest, uncensored prayer confessing your specific struggles and receive God\'s cleansing.',
+    reflectionQuestion: 'What secrets have you been keeping that have given the enemy power over your thoughts?',
+    prayer: 'Lord Jesus, I stop hiding. I bring my brokenness, my failed promises, and my secret struggles to the foot of Your cross. Wash me, cleanse me, and make me whole. Amen.'
+  },
+  {
+    dayNumber: 2,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'Fighting From Victory, Not For Victory',
+    scriptureRef: 'Colossians 1:13-14',
+    scriptureText: 'He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son, in whom we have redemption, the forgiveness of sins.',
+    devotional: 'You are not fighting to earn God\'s love or achieve a status of acceptance. Jesus already bought your freedom. Your battle is walking in the victory that is already accomplished.',
+    armorFocus: 'Breastplate of Righteousness (Front Plate)',
+    habitTask: 'Speak aloud 2 Corinthians 5:21 three times: "In Christ, I am the righteousness of God."',
+    reflectionQuestion: 'How does knowing your identity is secure in Christ reduce the panic of temptation?',
+    prayer: 'Father, thank You that my acceptance is based on Christ\'s blood, not my perfect track record. I choose to fight today from a posture of victory. Amen.'
+  },
+  {
+    dayNumber: 3,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'Mapping Your Personal Triggers',
+    scriptureRef: 'Proverbs 4:26',
+    scriptureText: 'Ponder the path of your feet; then all your ways will be sure.',
+    devotional: 'Sin rarely catches us entirely by surprise. It follows predictable pathways: fatigue, boredom, loneliness, stress, and unmonitored screen time. Today we map the danger zones.',
+    armorFocus: 'Shoes of the Gospel of Peace',
+    habitTask: 'Log your primary triggers in the app\'s Trigger Tracker (e.g., late night phone in bed, boredom after work).',
+    reflectionQuestion: 'What emotion or time of day is most dangerous for your spiritual vigilance?',
+    prayer: 'Lord, give me eyes to see the enemy\'s traps before I step on them. Help me guard my steps and walk in wisdom. Amen.'
+  },
+  {
+    dayNumber: 4,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'Understanding the James 1:14-15 Progression',
+    scriptureRef: 'James 1:14',
+    scriptureText: 'Each person is tempted when he is lured and enticed by his own desire.',
+    devotional: 'Temptation is not sin. Jesus was tempted in every way, yet without sin. Sin only conceives when you entertain the bait. Learn to extinguish the spark before the fire starts.',
+    armorFocus: 'Shield of Faith',
+    habitTask: 'Practice the "immediate extinguish" method: as soon as an impure thought enters, speak a scripture immediately.',
+    reflectionQuestion: 'Can you distinguish between the flash of a temptation and the choice to dwell upon it?',
+    prayer: 'Holy Spirit, alert my spirit at the very first whisper of temptation. Give me promptness to lift the shield of faith. Amen.'
+  },
+  {
+    dayNumber: 5,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'Renouncing the 5 Core Lies',
+    scriptureRef: 'John 8:32',
+    scriptureText: 'And you will know the truth, and the truth will set you free.',
+    devotional: 'Every act of sexual sin is preceded by a lie: "I can\'t help it," "Nobody is hurt," "God is holding out," "I\'ll never change," or "I\'m unforgivable." Truth shatters every one.',
+    armorFocus: 'Belt of Truth',
+    habitTask: 'Read through the Belt of Truth section and select the one lie you fall for most often; write down its countering verse.',
+    reflectionQuestion: 'Which specific lie has the enemy whispered most convincingly into your ear?',
+    prayer: 'Father of Truth, demolish every falsehood the enemy has built in my mind. Let Your Word anchor my soul. Amen.'
+  },
+  {
+    dayNumber: 6,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'The Temple of the Holy Spirit',
+    scriptureRef: '1 Corinthians 6:19-20',
+    scriptureText: 'Do you not know that your body is a temple of the Holy Spirit within you... You are not your own, for you were bought with a price.',
+    devotional: 'Your body is not a garbage disposal for cheap digital lust. It is the holy sanctuary of the third person of the Trinity. Treat your eyes, hands, and heart as consecrated to God.',
+    armorFocus: 'Helmet of Salvation',
+    habitTask: 'Dedicate your body to God today in prayer. Commit your hands, eyes, and thoughts as instruments of righteousness.',
+    reflectionQuestion: 'How does viewing your physical body as God\'s temple change how you treat solitary moments?',
+    prayer: 'Lord, You paid the ultimate ransom on Calvary for my body and spirit. I honor You today in my body. Amen.'
+  },
+  {
+    dayNumber: 7,
+    phaseNumber: 1,
+    phaseName: 'Phase 1: Awareness, Honesty & Preparation',
+    title: 'Celebrating Week One & Preparing for Boundaries',
+    scriptureRef: 'Psalm 121:1-2',
+    scriptureText: 'I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth.',
+    devotional: 'You have completed Phase 1! You have laid the foundation of honesty, examined the anatomy of sin, and anchored in truth. Now we move from internal awareness to external boundaries.',
+    armorFocus: 'The Full Armor',
+    habitTask: 'Write a short journal reflection on what God has shown you in these first 7 days.',
+    reflectionQuestion: 'How has your desire for genuine freedom grown over this past week?',
+    prayer: 'Faithful God, thank You for carrying me through these seven days. Strengthen my hands for the battles ahead. Amen.'
+  },
+
+  // PHASE 2: Removing Triggers and Establishing Boundaries (Days 8 - 14)
+  {
+    dayNumber: 8,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Making No Provision for the Flesh',
+    scriptureRef: 'Romans 13:14',
+    scriptureText: 'But put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires.',
+    devotional: '"Making provision" means leaving the door unlocked. If you know that having your phone next to your pillow leads to 1:00 AM relapse, keeping it there is making provision. Slam the door shut.',
+    armorFocus: 'Breastplate of Righteousness (Back Plate)',
+    habitTask: 'Charge your phone outside your bedroom tonight. Buy a basic alarm clock if needed.',
+    reflectionQuestion: 'What digital or environmental loophole have you quietly kept open?',
+    prayer: 'Lord, give me holy courage to eliminate every compromise. I choose radical purity over comfortable convenience. Amen.'
+  },
+  {
+    dayNumber: 9,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Tearing Out the Right Eye (Radical Amputation)',
+    scriptureRef: 'Matthew 5:29',
+    scriptureText: 'If your right eye causes you to sin, tear it out and throw it away.',
+    devotional: 'Jesus uses extreme language not to promote physical mutilation, but to underscore that nothing on earth—no app, no browser, no subscription—is worth losing your soul over.',
+    armorFocus: 'Sword of the Spirit',
+    habitTask: 'Delete at least one triggering app, account, or browser bookmark right now.',
+    reflectionQuestion: 'Is there a digital channel you know you need to cut off completely?',
+    prayer: 'Jesus, You gave Your life for me. I gladly cast away any device or habit that separates me from Your holiness. Amen.'
+  },
+  {
+    dayNumber: 10,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Guarding the Gateway of the Eyes',
+    scriptureRef: 'Job 31:1',
+    scriptureText: 'I have made a covenant with my eyes; how then could I gaze at a virgin?',
+    devotional: 'Job did not wait for temptation to overwhelm him; he made a pre-emptive covenant with his eyes. The second glance is where temptation turns into lust. Practice the immediate bounce.',
+    armorFocus: 'Shield of Faith',
+    habitTask: 'Practice looking away within 1 second whenever provocative imagery or billboards appear today.',
+    reflectionQuestion: 'Where do your eyes tend to wander when you are feeling tired or idle?',
+    prayer: 'Lord, purify my sight. Let the beauty of Christ so satisfy my soul that worldly allure loses all luster. Amen.'
+  },
+  {
+    dayNumber: 11,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Setting Up Content Filters & DNS Guardians',
+    scriptureRef: 'Proverbs 22:3',
+    scriptureText: 'The prudent sees danger and hides himself, but the simple go on and suffer for it.',
+    devotional: 'Relying solely on willpower when 24/7 high-speed temptation is in your pocket is foolishness. Review the app\'s Boundaries Guide today to enable CleanBrowsing or Screen Time restrictions.',
+    armorFocus: 'Belt of Truth & Breastplate',
+    habitTask: 'Open the Device Boundaries Guide in the app and set up at least one protective filter or passcode lock.',
+    reflectionQuestion: 'Why is it wise and humble to install fences rather than presuming on our own strength?',
+    prayer: 'Father, protect me from my own blind spots. Help me put safeguards in place that honor You. Amen.'
+  },
+  {
+    dayNumber: 12,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Handling the Caltrops of Boredom & Fatigue',
+    scriptureRef: 'Galatians 6:9',
+    scriptureText: 'And let us not grow weary of doing good, for in due season we will reap, if we do not give up.',
+    devotional: 'Boredom is spiritual lethargy; fatigue is physical vulnerability. When HALT (Hungry, Angry, Lonely, Tired) hits, your defenses drop. Recognize physical exhaustion as a spiritual alert.',
+    armorFocus: 'Shoes of the Gospel of Peace',
+    habitTask: 'Ensure you get proper sleep tonight and schedule 30 minutes of restorative rest or outdoor walking.',
+    reflectionQuestion: 'How often do your setbacks coincide with physical exhaustion or aimless boredom?',
+    prayer: 'Prince of Peace, grant me physical rest and spiritual alertness. When I am weary, be my strength. Amen.'
+  },
+  {
+    dayNumber: 13,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Social Media & Algorithmic Traps',
+    scriptureRef: 'Psalm 119:37',
+    scriptureText: 'Turn my eyes from looking at worthless things; and give me life in your ways.',
+    devotional: 'Modern algorithmic feeds are deliberately engineered to feed sensual curiosity. If scrolling triggers lustful thoughts, set strict 15-minute time limits or eliminate the app entirely.',
+    armorFocus: 'Shield of Faith',
+    habitTask: 'Take a 24-hour fast from all social media platforms starting today.',
+    reflectionQuestion: 'What social feed has become a soft gateway to sexual temptation in your life?',
+    prayer: 'Lord, deliver me from the mindless scrolling of this age. Captivate my attention with Your glory. Amen.'
+  },
+  {
+    dayNumber: 14,
+    phaseNumber: 2,
+    phaseName: 'Phase 2: Removing Triggers & Boundaries',
+    title: 'Two Weeks Firm — Entering Phase 3',
+    scriptureRef: 'Ephesians 6:13',
+    scriptureText: 'Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm.',
+    devotional: 'Day 14 milestone reached! By clearing provisions and establishing fences, you have built the perimeter wall. In Phase 3, we fill the empty space with living spiritual disciplines.',
+    armorFocus: 'The Full Armor',
+    habitTask: 'Check your progress badges and reflect on how your home environment has changed.',
+    reflectionQuestion: 'What positive changes have you noticed in your clarity of mind over the last two weeks?',
+    prayer: 'Lord God, You are my shield and my exceeding great reward. Keep me standing firm on the rock of Christ. Amen.'
+  },
+
+  // PHASE 3: Building Spiritual Disciplines & Healthy Replacement Habits (Days 15 - 21)
+  {
+    dayNumber: 15,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'The Law of Displacement: Filling the Void',
+    scriptureRef: 'Philippians 4:8',
+    scriptureText: 'Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure... think about these things.',
+    devotional: 'You cannot simply remove darkness; you must flood the room with light. If you eliminate porn but do not cultivate intimate fellowship with Jesus, the vacuum will demand to be filled.',
+    armorFocus: 'Helmet of Salvation',
+    habitTask: 'Spend 15 minutes today listening to Christ-centered worship or reading an inspiring Christian biography.',
+    reflectionQuestion: 'What wholesome, soul-nourishing activities bring you genuine peace and joy?',
+    prayer: 'Holy Spirit, fill every empty corner of my heart. Displace impure desires with the beauty of Your presence. Amen.'
+  },
+  {
+    dayNumber: 16,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'The Rhema Sword: Scripture Memorization',
+    scriptureRef: 'Psalm 119:11',
+    scriptureText: 'I have stored up your word in my heart, that I might not sin against you.',
+    devotional: 'Jesus did not argue philosophy with Satan in the wilderness; He quoted Deuteronomy. When you memorize the Word, you carry a concealed divine weapon into every battle.',
+    armorFocus: 'Sword of the Spirit',
+    habitTask: 'Memorize 1 Corinthians 10:13 word-for-word today using the flashcards in the Quiz section.',
+    reflectionQuestion: 'How many verses do you have ready to quote instantly when temptation strikes in the dark?',
+    prayer: 'Lord, imprint Your Word upon the tablets of my heart. Make it my instinctive reflex in battle. Amen.'
+  },
+  {
+    dayNumber: 17,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'Physical Discipline & Reclaiming the Body',
+    scriptureRef: '1 Corinthians 9:27',
+    scriptureText: 'But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified.',
+    devotional: 'Sexual energy is powerful bodily energy. When diverted into physical fitness, purposeful work, and outdoor activity, it fuels vigor rather than compulsive self-indulgence.',
+    armorFocus: 'Shoes of Peace & Belt',
+    habitTask: 'Engage in 30 minutes of vigorous physical exercise today (running, lifting, brisk walking).',
+    reflectionQuestion: 'How does regular bodily discipline strengthen your capacity for spiritual self-control?',
+    prayer: 'Lord, give me mastery over my physical appetites. Teach me to present my members as slaves to righteousness. Amen.'
+  },
+  {
+    dayNumber: 18,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'Drinking from the Living Water',
+    scriptureRef: 'John 7:37-38',
+    scriptureText: 'If anyone thirsts, let him come to me and drink. Whoever believes in me, as the Scripture has said, \'Out of his heart will flow rivers of living water.\'',
+    devotional: 'Lust is a distorted thirst. Pornography is like drinking saltwater—the more you drink, the thirstier and more poisoned you become. Christ alone satisfies.',
+    armorFocus: 'Shoes of the Gospel of Peace',
+    habitTask: 'Whenever you feel an urge today, take a literal glass of water and say: "Jesus, You are my living water."',
+    reflectionQuestion: 'In what ways does sexual sin always leave you emptier than before you indulged?',
+    prayer: 'Jesus, You are the bread of life and the living water. I reject the broken cisterns of this world and drink from You. Amen.'
+  },
+  {
+    dayNumber: 19,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'The Discipline of Fasting',
+    scriptureRef: 'Matthew 6:16-18',
+    scriptureText: 'And when you fast, do not look gloomy like the hypocrites...',
+    devotional: 'Fasting trains the will to say "no" to legitimate appetites (food) so that saying "no" to illegitimate desires (lust) becomes easier under the Spirit\'s power.',
+    armorFocus: 'Breastplate of Righteousness',
+    habitTask: 'Fast from one meal or from digital entertainment for 12 hours today, using that time for prayer.',
+    reflectionQuestion: 'What did fasting reveal about your dependence on physical comforts?',
+    prayer: 'Father, teach me that man does not live by bread alone, but by every word that proceeds from Your mouth. Amen.'
+  },
+  {
+    dayNumber: 20,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'A Heart of Service: Marching on Mission',
+    scriptureRef: 'Ephesians 2:10',
+    scriptureText: 'For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.',
+    devotional: 'Lust is completely self-absorbed. The antidote to self-absorption is outward love. A soldier who is actively rescuing others has no time to wallow in lust.',
+    armorFocus: 'Shoes of Peace (Readiness)',
+    habitTask: 'Do one intentional, unsolicited act of kindness or service for someone today without seeking credit.',
+    reflectionQuestion: 'Who in your life needs encouragement or practical help right now?',
+    prayer: 'Lord, expand my vision beyond myself. Give me hands that serve and feet that run with good news. Amen.'
+  },
+  {
+    dayNumber: 21,
+    phaseNumber: 3,
+    phaseName: 'Phase 3: Spiritual Disciplines & Replacement Habits',
+    title: 'Three Weeks Complete: Neural Pathways Rewiring',
+    scriptureRef: 'Romans 12:2',
+    scriptureText: 'Do not be conformed to this world, but be transformed by the renewal of your mind...',
+    devotional: 'Research shows that 21 days of consistent habit formation significantly strengthens new neural circuits. The old grooves are growing weaker; the pathways of purity are taking root!',
+    armorFocus: 'Helmet of Salvation',
+    habitTask: 'Write down three significant mental victories you have experienced over the last 21 days.',
+    reflectionQuestion: 'Are you noticing a shift in what your mind instinctively turns toward in quiet moments?',
+    prayer: 'Lord, thank You for the miracle of renewal. Keep pruning away the old and cultivating the fruit of the Spirit in me. Amen.'
+  },
+
+  // PHASE 4: Strengthening Accountability, Perseverance, and Long-Term Growth (Days 22 - 30)
+  {
+    dayNumber: 22,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Locking Shields: The Necessity of Brotherhood',
+    scriptureRef: 'Ecclesiastes 4:9-10',
+    scriptureText: 'Two are better than one, because they have a good reward for their toil. For if they fall, one will lift up his fellow.',
+    devotional: 'The enemy\'s favorite target is the lone straggler separated from the legion. In Roman warfare, soldiers interlocked shields to form an impenetrable wall. You need brotherly shields around you.',
+    armorFocus: 'Shield of Faith (Locking Shields)',
+    habitTask: 'Check in with your accountability partner or mentor today and share your 3-week progress honestly.',
+    reflectionQuestion: 'Who knows the real state of your heart and struggles right now?',
+    prayer: 'Lord, deliver me from the pride of independence. Give me genuine Christian brothers who will stand with me. Amen.'
+  },
+  {
+    dayNumber: 23,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Asking the Hard Accountability Questions',
+    scriptureRef: 'James 5:16',
+    scriptureText: 'Therefore, confess your sins to one another and pray for one another, that you may be healed.',
+    devotional: 'Shallow accountability asks: "How are you doing?" and accepts "Fine." Real accountability asks: "Did you look at anything compromising? Did you linger on any fantasies? Did you keep secrets?"',
+    armorFocus: 'Belt of Truth',
+    habitTask: 'Review the sample accountability questions in the app\'s Journal/Accountability tab.',
+    reflectionQuestion: 'Are you completely transparent during your accountability check-ins?',
+    prayer: 'Holy Spirit, give me honesty that refuses to hide behind vague words. Let light rule my relationships. Amen.'
+  },
+  {
+    dayNumber: 24,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Guarding Against Complacency (The Pride Trap)',
+    scriptureRef: '1 Corinthians 10:12',
+    scriptureText: 'Therefore let anyone who thinks that he stands take heed lest he fall.',
+    devotional: 'The most dangerous moment in recovery is when you feel you have "beaten" it. Pride whispers: "You are strong now; you can handle this movie or this late night." Stay vigilant.',
+    armorFocus: 'The Whole Armor',
+    habitTask: 'Review your perimeter fences and ensure you haven\'t allowed compromises to creep back in.',
+    reflectionQuestion: 'Where have you started feeling overconfident in your own strength?',
+    prayer: 'Father, protect me from spiritual pride. Keep me humble and dependent upon Your grace every breath of every day. Amen.'
+  },
+  {
+    dayNumber: 25,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Navigating Intense Setback Temptations',
+    scriptureRef: 'Hebrews 4:16',
+    scriptureText: 'Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.',
+    devotional: 'If a sudden massive wave of temptation hits, remember your emergency drills: Pause, Change Environment, Pray, Quote Scripture, and Take Replacement Action.',
+    armorFocus: 'Shield of Faith & Sword of the Spirit',
+    habitTask: 'Open the "I Am Being Tempted" Emergency Tool and familiarize yourself with all 6 steps before an urge happens.',
+    reflectionQuestion: 'Do you know exactly what your physical emergency escape route is right now?',
+    prayer: 'Lord, when waves of temptation crash, You are my rock. Lead me to the rock that is higher than I. Amen.'
+  },
+  {
+    dayNumber: 26,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Forgiving Yourself and Uprooting Shame',
+    scriptureRef: 'Romans 8:33-34',
+    scriptureText: 'Who shall bring any charge against God\'s elect? It is God who justifies. Who is to condemn? Christ Jesus is the one who died...',
+    devotional: 'Lingering self-condemnation is subtle idolatry—it says your failure is bigger than Christ\'s sacrifice. Receive His total forgiveness and stop dredging up pardoned sins.',
+    armorFocus: 'Breastplate of Righteousness',
+    habitTask: 'Write down "Paid in Full by Jesus" across any past memory that still brings guilt.',
+    reflectionQuestion: 'Are you still carrying shame for past sins that God has washed as white as snow?',
+    prayer: 'Lord Jesus, I silence the accuser by Your cross. I receive Your full pardon and refuse to live under condemned shame. Amen.'
+  },
+  {
+    dayNumber: 27,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Cultivating the Vision of Future Glory',
+    scriptureRef: '1 John 3:2-3',
+    scriptureText: 'Beloved, we are God\'s children now... And everyone who thus hopes in him purifies himself as he is pure.',
+    devotional: 'The helmet of salvation is the hope of future glory. Picture standing before Christ on the Last Day, hearing "Well done, good and faithful servant." This eternal hope purifies today.',
+    armorFocus: 'Helmet of Salvation',
+    habitTask: 'Spend 10 minutes contemplating heaven, the resurrection body, and seeing Jesus face to face.',
+    reflectionQuestion: 'How does an eternal mindset shrink the temporary appeal of pixelated images?',
+    prayer: 'King of Glory, fix my eyes on eternity. Let the splendor of seeing You outweigh every fleeting pleasure of earth. Amen.'
+  },
+  {
+    dayNumber: 28,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Praying Always in the Spirit',
+    scriptureRef: 'Ephesians 6:18',
+    scriptureText: '...praying at all times in the Spirit, with all prayer and supplication. To that end, keep alert with all perseverance...',
+    devotional: 'Prayer is not an occasional SOS flare; it is the continuous oxygen supply of the believer. Walk in unbroken conversation with God throughout your workday, commutes, and downtime.',
+    armorFocus: 'Prayer and Supplication',
+    habitTask: 'Turn three routine moments today (e.g. washing hands, waiting at red lights) into prompt prayer triggers.',
+    reflectionQuestion: 'How can you transition from episodic prayer to continuous communion with God?',
+    prayer: 'Lord, keep me praying all day long. Let my first thought in morning and my last thought at night belong to You. Amen.'
+  },
+  {
+    dayNumber: 29,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Becoming a Shield for Others',
+    scriptureRef: 'Luke 22:32',
+    scriptureText: 'But I have prayed for you that your faith may not fail. And when you have turned again, strengthen your brothers.',
+    devotional: 'Jesus told Peter that after he turned back, he was to strengthen his brothers. God does not waste your pain. Your battle will become someone else\'s rescue map.',
+    armorFocus: 'Shoes of Peace & Shield',
+    habitTask: 'Pray by name for someone else who is wrestling with sexual purity or compulsive habits.',
+    reflectionQuestion: 'How can your testimony of God\'s delivering grace inspire courage in another struggler?',
+    prayer: 'Lord, use my scars as trophies of Your grace. Make me an instrument of deliverance for others in bondage. Amen.'
+  },
+  {
+    dayNumber: 30,
+    phaseNumber: 4,
+    phaseName: 'Phase 4: Accountability & Long-Term Freedom',
+    title: 'Thirty Days of Freedom: Standing Firm for Life',
+    scriptureRef: 'Jude 1:24-25',
+    scriptureText: 'Now to him who is able to keep you from stumbling and to present you blameless before the presence of his glory with great joy, to the only God, our Savior... be glory forever. Amen.',
+    devotional: 'Congratulations! You have completed the 30-Day Spiritual Growth Plan! You have put on the Belt, Breastplate, Shoes, Shield, Helmet, and Sword. Remember: graduation is not retirement. Keep the armor on every day until Jesus returns!',
+    armorFocus: 'The Complete Armor of God',
+    habitTask: 'Celebrate this milestone! Reward yourself with a special wholesome activity and recommit to your daily battle rhythm.',
+    reflectionQuestion: 'What are the two most transformative habits you will keep practicing for the rest of your life?',
+    prayer: 'To Him who is able to keep me from stumbling, and to present me blameless with great joy, be glory, majesty, dominion, and authority through Jesus Christ our Lord! I stand firm in the Full Armour of God! Amen!'
+  }
+];

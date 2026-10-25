@@ -1,0 +1,6 @@
+{
+  "name": "Armour of God — Christian Freedom & Purity",
+  "description": "Stand Firm. Walk in Purity. Live in Freedom. A biblical, mobile-first PWA to overcome pornography, masturbation, and sexual temptation with the Full Armour of God.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

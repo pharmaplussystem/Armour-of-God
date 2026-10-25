@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('./assets/fonts/cinzel-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('./assets/fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Cinzel', Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b132b;
+    color: #f1f5f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: var(--font-heading);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom scrollbars for mature, polished aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 19, 43, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.5);
+}
+
+/* Support mobile viewport notch and home indicator safe areas */
+.safe-pb {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+.safe-pt {
+  padding-top: env(safe-area-inset-top, 0.5rem);
+}
+
+/* ==========================================================================
+   LIGHT THEME OVERRIDES (Alabaster & Gold)
+   ========================================================================== */
+html.light,
+html.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html.light .app-shell {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Header & Navigation in Light Mode */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: rgba(217, 119, 6, 0.2) !important;
+}
+
+html.light nav.fixed {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-top-color: #e2e8f0 !important;
+}
+
+/* Cards & Panel Backgrounds in Light Mode */
+html.light .bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+}
+
+html.light .bg-slate-900\/50,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/90 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Inner Wells, Insets & Inactive Buttons */
+html.light .bg-slate-950,
+html.light .bg-slate-950\/40,
+html.light .bg-slate-950\/50,
+html.light .bg-slate-950\/60,
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80 {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Borders */
+html.light .border-slate-800,
+html.light .border-slate-800\/40,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/90,
+html.light .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Typography in Light Mode */
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* High-contrast accessible accent colors for Light Mode */
+html.light .text-amber-300,
+html.light .text-amber-400 {
+  color: #b45309 !important; /* amber-700 */
+}
+
+html.light .text-amber-300\/90 {
+  color: #92400e !important;
+}
+
+html.light .text-blue-300,
+html.light .text-blue-400 {
+  color: #1d4ed8 !important; /* blue-700 */
+}
+
+html.light .text-emerald-300,
+html.light .text-emerald-400 {
+  color: #047857 !important; /* emerald-700 */
+}
+
+html.light .text-purple-300,
+html.light .text-purple-400 {
+  color: #6d28d9 !important; /* purple-700 */
+}
+
+html.light .text-red-200,
+html.light .text-red-300,
+html.light .text-red-400 {
+  color: #b91c1c !important; /* red-700 */
+}
+
+html.light .text-indigo-300,
+html.light .text-indigo-400 {
+  color: #4338ca !important; /* indigo-700 */
+}
+
+/* Form Controls & Inputs in Light Mode */
+html.light input:not([type='range']):not([type='checkbox']):not([type='radio']),
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.light input:not([type='range']):not([type='checkbox']):not([type='radio']):focus,
+html.light textarea:focus,
+html.light select:focus {
+  border-color: #d97706 !important;
+  outline: none;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Secondary Button Styles in Light Mode */
+html.light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .bg-slate-800:hover {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Hero / Welcome Banner in Light Mode */
+html.light .bg-gradient-to-br.from-\[\#0f1d3f\] {
+  background-image: linear-gradient(135deg, #fef3c7 0%, #fffbeb 50%, #eff6ff 100%) !important;
+  border-color: rgba(217, 119, 6, 0.3) !important;
+}
+
+html.light .bg-gradient-to-r.from-slate-900 {
+  background-image: linear-gradient(to right, #ffffff, #f8fafc, #ffffff) !important;
+}
+
+html.light .bg-gradient-to-br.from-slate-900 {
+  background-image: linear-gradient(to bottom right, #ffffff, #f8fafc) !important;
+}
+
+/* Container Tints */
+html.light .bg-blue-950\/40,
+html.light .bg-blue-950\/50,
+html.light .bg-indigo-950\/30,
+html.light .bg-indigo-950\/40 {
+  background-color: #f0fdf4 !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .bg-emerald-950\/30,
+html.light .bg-emerald-950\/40 {
+  background-color: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+}
+
+html.light .bg-amber-950\/40,
+html.light .bg-amber-950\/20 {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+}
+
+html.light .bg-purple-950\/10,
+html.light .bg-purple-950\/30 {
+  background-color: #faf5ff !important;
+  border-color: #e9d5ff !important;
+}
+
+html.light .bg-red-950\/40,
+html.light .bg-red-950\/50 {
+  background-color: #fef2f2 !important;
+  border-color: #fecaca !important;
+}
+
+html.light blockquote {
+  color: #1e293b !important;
+}
+
+/* Modals in Light Mode */
+html.light .fixed.inset-0 {
+  background-color: rgba(15, 23, 42, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+}
+html.light .fixed .bg-gradient-to-b.from-slate-900 {
+  background-image: linear-gradient(to bottom, #ffffff, #fffbeb, #ffffff) !important;
+  border-color: rgba(217, 119, 6, 0.4) !important;
+}
+html.light .fixed .bg-gradient-to-r.from-blue-950,
+html.light .fixed .bg-gradient-to-r.from-blue-950\/80,
+html.light .fixed .bg-gradient-to-r.from-red-950\/80 {
+  background-color: #f8fafc !important;
+  background-image: none !important;
+}
+
+/* Scrollbars in Light Mode */
+html.light ::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.9);
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: rgba(217, 119, 6, 0.35);
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(217, 119, 6, 0.65);
+}

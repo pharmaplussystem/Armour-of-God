@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Armour of God — Christian Freedom & Purity</title>
+    <meta name="description" content="Stand Firm. Walk in Purity. Live in Freedom. A biblical, mobile-first PWA to overcome pornography, masturbation, and sexual temptation with the Full Armour of God." />
+    
+    <!-- PWA & Mobile Web App Meta -->
+    <meta name="theme-color" content="#0b132b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ArmourOfGod" />
+    
+    <!-- Icons & Manifest (Relative paths for GitHub Pages subpath compatibility) -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    
+    <!-- Social Share Cards -->
+    <meta property="og:title" content="Armour of God — Christian Freedom & Purity" />
+    <meta property="og:description" content="Stand Firm. Walk in Purity. Live in Freedom. A biblical, mobile-first PWA to overcome pornography, masturbation, and sexual temptation with the Full Armour of God." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="bg-[#0b132b] text-slate-100 antialiased selection:bg-amber-500/30 selection:text-amber-200 min-h-screen">
+    <div id="root"></div>
+    <script>
+      // Automatic router for GitHub Pages:
+      // When hosted as raw static files on GitHub Pages root, route to /docs/ where the compiled bundle lives
+      if (window.location.hostname.endsWith('github.io')) {
+        var p = window.location.pathname;
+        if (!p.includes('/docs')) {
+          var cleanBase = p.replace(/\/armour-of-god\/?/i, '/Armour-of-God/');
+          if (!cleanBase.endsWith('/')) cleanBase += '/';
+          window.location.replace(window.location.origin + cleanBase + 'docs/' + window.location.search + window.location.hash);
+        }
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker for 100% offline support
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          // Resolve relative sw.js path so it functions seamlessly on root domains and GitHub Pages subpaths
+          const swUrl = new URL('./sw.js', window.location.href).href;
+          navigator.serviceWorker.register(swUrl, { scope: './' }).then(
+            (reg) => {
+              console.log('Armour of God SW active: ', reg.scope);
+              reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                if (newWorker) {
+                  newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                      console.log('Armour of God updated in background.');
+                    }
+                  });
+                }
+              });
+            },
+            (err) => console.warn('Armour of God SW registration failed: ', err)
+          );
+        });
+      }
+    </script>
+  </body>
+</html>
+

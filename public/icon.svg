@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Golden Aura -->
+  <circle cx="256" cy="240" r="190" fill="#f59e0b" opacity="0.08" filter="url(#glow)" />
+
+  <!-- The Sword of the Spirit (Behind the Shield) -->
+  <g id="sword" opacity="0.95">
+    <!-- Blade tip and body -->
+    <path d="M256 50 L266 85 L263 395 L256 410 L249 395 L246 85 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+    <path d="M256 50 L256 410 L249 395 L246 85 Z" fill="#cbd5e1" />
+    <!-- Crossguard -->
+    <rect x="200" y="390" width="112" height="16" rx="8" fill="url(#goldGrad)" stroke="#78350f" stroke-width="2" />
+    <!-- Grip -->
+    <rect x="249" y="406" width="14" height="42" rx="4" fill="#78350f" stroke="url(#goldGrad)" stroke-width="2" />
+    <!-- Pommel -->
+    <circle cx="256" cy="458" r="14" fill="url(#goldGrad)" stroke="#78350f" stroke-width="2" />
+  </g>
+
+  <!-- Shield Shape (The Shield of Faith) -->
+  <path d="M120 140 C120 120, 256 95, 256 95 C256 95, 392 120, 392 140 C392 280, 340 370, 256 415 C172 370, 120 280, 120 140 Z"
+        fill="url(#shieldGrad)"
+        stroke="url(#goldGrad)"
+        stroke-width="12"
+        stroke-linejoin="round"
+        filter="url(#glow)" />
+
+  <!-- Inner Shield Trim -->
+  <path d="M136 150 C136 135, 256 112, 256 112 C256 112, 376 135, 376 150 C376 270, 328 352, 256 395 C184 352, 136 270, 136 150 Z"
+        fill="none"
+        stroke="url(#goldGrad)"
+        stroke-width="3"
+        stroke-dasharray="6,4"
+        opacity="0.8" />
+
+  <!-- Central Cross of Christ -->
+  <g id="cross">
+    <!-- Vertical Beam -->
+    <rect x="242" y="150" width="28" height="180" rx="4" fill="url(#goldGrad)" stroke="#78350f" stroke-width="2" filter="url(#glow)" />
+    <!-- Horizontal Beam -->
+    <rect x="180" y="195" width="152" height="28" rx="4" fill="url(#goldGrad)" stroke="#78350f" stroke-width="2" filter="url(#glow)" />
+    <!-- Core gem/flare -->
+    <circle cx="256" cy="209" r="12" fill="#ffffff" opacity="0.9" filter="url(#glow)" />
+  </g>
+
+  <!-- Golden Stars of Truth & Victory (representing the pieces of armour) -->
+  <path d="M256 122 L259 130 L267 130 L261 135 L263 143 L256 138 L249 143 L251 135 L245 130 L253 130 Z" fill="#fef08a" />
+  <path d="M200 160 L202 166 L208 166 L203 170 L205 176 L200 172 L195 176 L197 170 L192 166 L198 166 Z" fill="#fef08a" />
+  <path d="M312 160 L314 166 L320 166 L315 170 L317 176 L312 172 L307 176 L309 170 L304 166 L310 166 Z" fill="#fef08a" />
+
+  <!-- Subtle Banner Accent -->
+  <path d="M160 330 Q256 360 352 330" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.7" />
+</svg>
